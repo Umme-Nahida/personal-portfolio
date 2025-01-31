@@ -6,11 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Resume</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body class="bg-gray-100 w-[100%] max-w-[1280px] mx-auto min-h-screen m-48">
         <!-- Navigation Bar (Same) -->
-        <div class=" flex justify-end items-center">
+        <div class="flex justify-end items-center">
             <nav class="w-80 space-x-4 text-center bg-gray-300 p-3 rounded-lg sticky top-0 z-50">
                 <a href="index.html" class="text-gray-700 active:text-blue-600">About</a>
                 <a href="resume.html" class="text-gray-700 active:text-blue-600">Resume</a>
@@ -22,7 +23,7 @@
         <!-- user profile and other pages -->
         <div class="lg:relative p-4 bg-white shadow-lg rounded-lg flex gap-10">
             <!-- Sidebar -->
-            <aside class="relative -top-32 w-1/4 bg-blue-400 p-5 rounded-lg shadow-md">
+            <aside class="relative -top-32 w-1/4 max-h-[450px] bg-blue-400 p-5 rounded-lg shadow-md">
                 <div class="flex flex-col items-center">
                     <div class="w-32 h-32 bg-gray-300 rounded-full"></div>
                     <h2 class="text-xl font-semibold mt-4">Monalisa Ashley</h2>
@@ -45,11 +46,55 @@
             </aside>
 
             <!-- Main Content -->
-            <main class="w-3/4 p-5 bg-green-400">
+            <main class="w-3/4 p-10 bg-green-400">
                 <!-- Page Specific Content -->
                 <section class="mt-4">
                     <h1 class="text-2xl font-bold">About</h1>
-                    <p class="text-gray-600 mt-2">Educational and professional experience goes here...</p>
+                    <p class="text-gray-600 mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius iste neque cumque beatae modi dolorem minima quo repellendus? Repudiandae qui tenetur dolorum impedit reprehenderit corporis aliquid esse deserunt, quam velit. Velit aut quis nesciunt, nobis iusto sint officiis saepe, nemo, minima quibusdam aperiam exercitationem expedita! </p>
+                    <p class="text-gray-600 mt-2">
+                       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quas reprehenderit repellat ea blanditiis rem magnam atque dolore veniam ex.
+                    </p>
+                </section>
+
+                <!-- what I do -->
+                <section class="mt-10">
+                  <h1 class="mb-4 text-xl md:text-xl lg:text-3xl">What I do </h1>
+
+                <!-- parent container -->
+                 <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5">
+                    <!-- card -->
+                    <div class="bg-green-100 flex justify-between items-start gap-x-5 p-3 rounded-md">
+                      <i class="fa-solid text-4xl fa-object-ungroup"></i>
+                       <div class="space-y-2" >
+                         <h1>UI/UX Design</h1>
+                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, molestiae!</p>
+                       </div>
+                    </div>
+                    <!-- card -->
+                    <div class="bg-green-100 flex justify-between items-start gap-x-5 p-3 rounded-md">
+                      <i class="fa-solid text-4xl fa-object-ungroup"></i>
+                       <div class="space-y-2" >
+                         <h1>UI/UX Design</h1>
+                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, molestiae!</p>
+                       </div>
+                    </div>
+                    <!-- card -->
+                    <div class="bg-green-100 flex justify-between items-start gap-x-5 p-3 rounded-md">
+                      <i class="fa-solid text-4xl fa-object-ungroup"></i>
+                       <div class="space-y-2" >
+                         <h1>UI/UX Design</h1>
+                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, molestiae!</p>
+                       </div>
+                    </div>
+                    <!-- card -->
+                    <div class="bg-green-100 flex justify-between items-start gap-x-5 p-3 rounded-md">
+                      <i class="fa-solid text-4xl fa-object-ungroup"></i>
+                       <div class="space-y-2" >
+                         <h1>UI/UX Design</h1>
+                         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, molestiae!</p>
+                       </div>
+                    </div>
+                 </div>
                 </section>
             </main>
         </div>
