@@ -2,189 +2,172 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio - Resume</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <style>
-    body {
-      background-image: url('/asset/bg.jpg');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      height: 100vh;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            background-image: url('/asset/bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+    </style>
 </head>
 
 <body class="w-[100%] max-w-[1280px] mx-auto min-h-screen m-40">
-  <!-- Navigation Bar (Same) -->
-  <div class="flex justify-center lg:justify-end items-center mb-5">
+    <!-- Navigation Bar (Same) -->
+    <div class="flex justify-center lg:justify-end items-center mb-5">
 
-    <nav class="w-90 space-x-4 flex text-center lg:mr-5 bg-white p-6 rounded-lg sticky top-0 z-50">
+        <nav class="flex flex-wrap sm:items-center justify-center gap-5 lg:w-90 space-x-4 text-center lg:mr-5 bg-white p-6 rounded-lg sticky top-0 z-50">
 
-      <a href="index.html">
-        <button
-          class="text-black  bg-slate-300  p-5 rounded-md  active:text-blue-600 hover:text-white  flex flex-col items-center justify-center hover:bg-red-600 ">
-          <i class="fa-regular fa-user"></i>
-          <p>About</p>
-        </button>
-      </a>
-      <a href="resume.html"> <button
-        class="text-black bg-slate-300  p-5 rounded-md  active:text-blue-600 hover:text-white  flex flex-col items-center justify-center hover:bg-red-600 ">
-        <i class="fa-regular fa-file"></i>
-        <p>Resume</p>
-      </button></a>
-      <a href="works.html" > <button
-        class="text-black bg-slate-300  p-5 rounded-md  active:text-blue-600 hover:text-white  flex flex-col items-center justify-center hover:bg-red-600 ">
-        <i class="fa-regular fa-building"></i>
-        <p>Works</p>
-      </button></a>
-      <a href="contact.html"> <button
-        class="text-black bg-slate-300  p-5 rounded-md  active:text-blue-600 hover:text-white  flex flex-col items-center justify-center hover:bg-red-600 ">
-        <i class="fa-brands fa-blogger"></i>
-        <p>Blogs</p>
-      </button></a>
-      <a href="contact.html"> <button
-        class="text-black bg-slate-300  p-5 rounded-md  active:text-blue-600 hover:text-white  flex flex-col items-center justify-center hover:bg-red-600 ">
-        <i class="fa-regular fa-address-book"></i>
-        <p>Contact</p>
-      </button></a>
-    </nav>
-  </div>
+            <a href="index.html">
+                <button
+                    class="text-black  bg-slate-300  p-5 rounded-md  active:text-blue-600 hover:text-white  flex flex-col items-center justify-center hover:bg-red-600 ">
+                    <i class="fa-regular fa-user"></i>
+                    <p>About</p>
+                </button>
+            </a>
+            <a href="resume.html"> <button
+                    class="text-black bg-slate-300  p-5 rounded-md  active:text-blue-600 hover:text-white  flex flex-col items-center justify-center hover:bg-red-600 ">
+                    <i class="fa-regular fa-file"></i>
+                    <p>Resume</p>
+                </button></a>
+            <a href="works.html"> <button
+                    class="text-black bg-slate-300  p-5 rounded-md  active:text-blue-600 hover:text-white  flex flex-col items-center justify-center hover:bg-red-600 ">
+                    <i class="fa-regular fa-building"></i>
+                    <p>Works</p>
+                </button></a>
+            <a href="blogs.html"> <button
+                    class="text-black bg-slate-300  p-5 rounded-md  active:text-blue-600 hover:text-white  flex flex-col items-center justify-center hover:bg-red-600 ">
+                    <i class="fa-brands fa-blogger"></i>
+                    <p>Blogs</p>
+                </button></a>
+            <a href="contact.html"> <button
+                    class="text-black bg-slate-300  p-5 rounded-md  active:text-blue-600 hover:text-white  flex flex-col items-center justify-center hover:bg-red-600 ">
+                    <i class="fa-regular fa-address-book"></i>
+                    <p>Contact</p>
+                </button></a>
+        </nav>
+    </div>
 
-  <!-- user profile and other pages -->
-  <div class="lg:relative p-4 flex flex-col md:flex-col lg:flex-row gap-10">
-    <!-- Sidebar -->
-    <aside class="lg:relative lg:-top-32 w-full lg:w-1/4 max-h-[700px] bg-white p-5 rounded-lg shadow-md">
-      <div class="flex flex-col items-center">
-        <div class="w-32 h-32 bg-gray-300 rounded-full">
-          <img src="./asset/user.png" class="size-32 rounded-full bg-cover" alt="">
-        </div>
-        <h2 class="text-xl font-semibold mt-4">Rejawol Haque</h2>
-        <p class="bg-gray-500 rounded-md mt-2 text-white py-1 px-3">UI/UX Designer</p>
+    <!-- user profile and other pages -->
+    <div class="lg:relative p-4 flex flex-col md:flex-col lg:flex-row gap-10">
+        <!-- Sidebar -->
+        <aside class="lg:relative lg:-top-32 w-full lg:w-1/4 max-h-[700px] bg-white p-5 rounded-lg shadow-md">
+            <div class="flex flex-col items-center">
+                <div class="w-32 h-32 bg-gray-300 rounded-full">
+                    <img src="./asset/user.png" class="size-32 rounded-full bg-cover" alt="">
+                </div>
+                <h2 class="text-xl font-semibold mt-4">Rejawol Haque</h2>
+                <p class="bg-gray-500 rounded-md mt-2 text-white py-1 px-3">UI/UX Designer</p>
 
-        <div class="flex space-x-3 mt-3">
-          <a href="#" class="bg-gray-300 rounded-md mt-2 text-white py-2 px-3">
-            <img src="./asset/facebook.png" alt="">
+                <div class="flex space-x-3 mt-3">
+                    <a href="#" class="bg-gray-300 rounded-md mt-2 text-white py-2 px-3">
+                        <img src="./asset/facebook.png" alt="">
 
-          </a>
-          <a href="#" class="bg-gray-300 rounded-md mt-2 text-white py-2 px-3">
-            <img src="./asset/insta.png" alt="">
-          </a>
-          <a href="#" class="bg-gray-300 rounded-md mt-2 text-white py-2 px-3">
-            <img src="./asset/x.png" alt="">
-          </a>
-          <a href="#" class="bg-gray-300 rounded-md mt-2 text-white py-2 px-3">
-            <img src="./asset/linkedin.png" alt="">
-          </a>
-        </div>
+                    </a>
+                    <a href="#" class="bg-gray-300 rounded-md mt-2 text-white py-2 px-3">
+                        <img src="./asset/insta.png" alt="">
+                    </a>
+                    <a href="#" class="bg-gray-300 rounded-md mt-2 text-white py-2 px-3">
+                        <img src="./asset/x.png" alt="">
+                    </a>
+                    <a href="#" class="bg-gray-300 rounded-md mt-2 text-white py-2 px-3">
+                        <img src="./asset/linkedin.png" alt="">
+                    </a>
+                </div>
 
-        <div class="mt-4 space-y-2 bg-slate-100 p-5 rounded-md">
-          <div class="flex items-center gap-x-2 border-b-2 pb-2">
-            <i class="fa-solid text-lg bg-white text-red-500 py-3 px-4 rounded-md fa-mobile-screen"></i>
-            <p class="text-black text-xl "><span class="text-base text-slate-500">Phone: </span> <br> +123 456 7890</p>
-          </div>
-          <div class="flex items-start gap-x-2 border-b-2 pb-2">
-            <i class="fa-solid text-lg bg-white text-red-500 py-3 px-4 rounded-md fa-mobile-screen""></i>
+                <div class="mt-4 space-y-2 bg-slate-100 p-5 rounded-md">
+                    <div class="flex items-center gap-x-2 border-b-2 pb-2">
+                        <i class="fa-solid text-lg bg-white text-red-500 py-3 px-4 rounded-md fa-mobile-screen"></i>
+                        <p class="text-black text-xl "><span class="text-base text-slate-500">Phone: </span> <br> +123
+                            456 7890</p>
+                    </div>
+                    <div class="flex items-start gap-x-2 border-b-2 pb-2">
+                        <i class="fa-solid text-lg bg-white text-red-500 py-3 px-4 rounded-md fa-mobile-screen""></i>
             <p class=" text-black text-xl "><span class=" text-base text-slate-500">Email: </span> <br>
-              example@gmail.com</p>
-          </div>
-          <div class="flex items-start gap-x-2 border-b-2 pb-2">
-            <i class="fa-solid text-lg bg-white text-red-500 py-3 px-4 rounded-md fa-mobile-screen""></i>
+                            example@gmail.com</p>
+                    </div>
+                    <div class="flex items-start gap-x-2 border-b-2 pb-2">
+                        <i class="fa-solid text-lg bg-white text-red-500 py-3 px-4 rounded-md fa-mobile-screen""></i>
             <p class=" text-black text-xl "><span class=" text-base text-slate-500">Address:</span> <br> Hong Kong,
-              China</p>
-          </div>
-          <div class="flex items-start gap-x-2 border-b-2 pb-2">
-            <i class="fa-solid fa-calendar-days text-lg bg-white text-red-500 py-3 px-4 rounded-md"></i>
-            <p class="text-black text-xl "><span class="text-base text-slate-500">Birthday:</span> <br> May 27, 1990</p>
-          </div>
+                            China</p>
+                    </div>
+                    <div class="flex items-start gap-x-2 border-b-2 pb-2">
+                        <i class="fa-solid fa-calendar-days text-lg bg-white text-red-500 py-3 px-4 rounded-md"></i>
+                        <p class="text-black text-xl "><span class="text-base text-slate-500">Birthday:</span> <br> May
+                            27, 1990</p>
+                    </div>
 
-        </div>
+                </div>
 
-        <button class="mt-4 bg-red-500 text-white px-4 py-2 rounded-full">Download CV</button>
-      </div>
-    </aside>
-
-    <!-- Main Content -->
-    <main class="w-full lg:w-3/4 p-5 lg:p-10 bg-white">
-      <!-- Page Specific Content -->
-      <section class="mt-4">
-        <div class="flex gap-5 items-center">
-          <h1 class="text-3xl font-bold">About</h1>
-          <hr class="w-40 h-1 bg-red-500 border-none">
-        </div>
-        <p class="text-gray-600 mt-2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius iste neque cumque
-          beatae modi dolorem minima quo repellendus? Repudiandae qui tenetur dolorum impedit reprehenderit corporis
-          aliquid esse deserunt, quam velit. Velit aut quis nesciunt, nobis iusto sint officiis saepe, nemo, minima
-          quibusdam aperiam exercitationem expedita! </p>
-        <p class="text-gray-600 mt-2">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam quas reprehenderit repellat ea blanditiis
-          rem magnam atque dolore veniam ex.
-        </p>
-      </section>
-
-      <!-- what I do -->
-      <section class="mt-10">
-        <h1 class="mb-4 text-xl md:text-xl lg:text-3xl">What I do </h1>
-
-        <!-- parent container -->
-        <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-5">
-          <!-- card 01 -->
-          <div class="bg-green-100 flex lg:justify-between items-start gap-x-5 p-3 rounded-md">
-            <img src="./asset/icon.png" class="size-10" alt="">
-            <div class="space-y-2">
-              <h1>UI/UX Design</h1>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, molestiae!</p>
+                <button class="mt-4 bg-red-500 text-white px-4 py-2 rounded-full">Download CV</button>
             </div>
-          </div>
-          <!-- card -->
-          <div class="bg-green-100 flex lg:justify-between items-start gap-x-5 p-3 rounded-md">
-            <img src="./asset/icon1.png" class="size-10" alt="">
-            <div class="space-y-2">
-              <h1>UI/UX Design</h1>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, molestiae!</p>
-            </div>
-          </div>
-          <!-- card -->
-          <div class="bg-green-100 flex lg:justify-between items-start gap-x-5 p-3 rounded-md">
-            <img src="./asset/icon2.png" class="size-10" alt="">
-            <div class="space-y-2">
-              <h1>UI/UX Design</h1>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, molestiae!</p>
-            </div>
-          </div>
-          <!-- card -->
-          <div class="bg-green-100 flex lg:justify-between items-start gap-x-5 p-3 rounded-md">
-            <img src="./asset/icon3.png" class="size-10" alt="">
-            <div class="space-y-2">
-              <h1>UI/UX Design</h1>
-              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, molestiae!</p>
-            </div>
-          </div>
-        </div>
-      </section>
+        </aside>
 
-      <!-- client section -->
-      <section class="text-center my-10">
-        <h1 class="mb-10 text-xl md:text-3xl text-center">Clients</h1>
-        <div class="flex flex-wrap justify-around">
-          <img src="./asset/brand.png" class="w-28 h-24" alt="">
-          <img src="./asset/brand1.png" class="w-28 h-24" alt="">
-          <img src="./asset/brand2.png" class="w-28 h-24" alt="">
-          <img src="./asset/brand3.png" class="w-28 h-24" alt="">
-          <img src="./asset/brand4.png" class="w-28 h-24" alt="">
-        </div>
-      </section>
+        <!-- Main Content -->
+        <main class="w-full lg:w-3/4 p-5 lg:p-10 bg-white">
+            
+            <!-- blogs container -->
+             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 items-center justify-center gap-5 mb-5">
 
-      <footer class="text-center p-4 bg-slate-50">
-        <p>© 2021 All Rights Reserved by ib-themes.</p>
-      </footer>
-    </main>
-  </div>
+              <!-- card 01-->
+              <div class="p-5 space-y-3 bg-[#FCF4FF] rounded-md lg:h-[520px]">
+                <img class="rounded-md size-80 w-full" src="https://i.ibb.co.com/7h7SsW0/How-to-make-your-code-more-efficient-using-Dynamic-Programming.jpg" alt="">
+                <div class="flex items-center gap-x-2">
+                  <p>27 April</p>
+                  <p>. Inspiration</p>
+                </div>
+                <h1 class="text-xl md:text-xl lg:text-xl">How to Own Your Audience by 
+                  Creating an Email List.</h1>
+              </div>
+
+              <!-- card 02-->
+              <div class="p-5 space-y-3 bg-[#FCF4FF] rounded-md lg:h-[520px]">
+                <img class="rounded-md size-80 w-full" src="https://i.ibb.co.com/7h7SsW0/How-to-make-your-code-more-efficient-using-Dynamic-Programming.jpg" alt="">
+                <div class="flex items-center gap-x-2">
+                  <p>12 March</p>
+                  <p>. Web Design</p>
+                </div>
+                <h1 class="text-xl md:text-xl lg:text-xl">the window know to 
+                  say beside you</h1>
+              </div>
+
+              <!-- card 03-->
+              <div class="p-5 space-y-3 bg-[#FCF4FF] rounded-md lg:h-[520px]">
+                <img class=" rounded-md size-80 w-full" src="https://i.ibb.co.com/7h7SsW0/How-to-make-your-code-more-efficient-using-Dynamic-Programming.jpg" alt="">
+                <div class="flex items-center gap-x-2">
+                  <p>12 March</p>
+                  <p>. Travel Landing</p>
+                </div>
+                <h1 class="text-xl md:text-xl lg:text-xl">Everything You Need to Know 
+                  About Web Accessibility.</h1>
+              </div>
+
+              <!-- card 04-->
+              <div class="p-5 space-y-3 bg-[#FCF4FF] rounded-md lg:h-[520px]">
+                <img class="rounded-md size-80 w-full" src="https://i.ibb.co.com/7h7SsW0/How-to-make-your-code-more-efficient-using-Dynamic-Programming.jpg" alt="">
+                <div class="flex items-center gap-x-2">
+                  <p>15 november</p>
+                  <p>. Web Design</p>
+                </div>
+                <h1 class="text-xl md:text-xl lg:text-xl">Top 10 Toolkits for Deep Learning 
+                  in 2021.</h1>
+              </div>
+
+             </div>
+
+            <footer class="text-center p-4 bg-slate-50">
+                <p>© 2021 All Rights Reserved by ib-themes.</p>
+            </footer>
+        </main>
+    </div>
 
 </body>
 
